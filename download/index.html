@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download Famoni</title>
+<meta name="description" content="Family budget, expenses and cards. Works offline, 100% private. Try it free for 14 days.">
+<meta property="og:title" content="Famoni: Family Budget">
+<meta property="og:description" content="Ever reach the end of the month with no idea where your paycheck went? Try Famoni free for 14 days.">
+<meta property="og:image" content="https://andresvallejobaldeon.github.io/famoni/icon.png">
+<meta property="og:url" content="https://andresvallejobaldeon.github.io/famoni/download/">
+<link rel="icon" href="../icon.png">
+<script>
+// Sends each phone to its own store; computers stay on the page with both buttons.
+// Add ?ver to the URL to see the page on a phone without being redirected.
+(function () {
+  if (/[?&]ver\b/.test(location.search)) return;
+  var ua = navigator.userAgent || "";
+  var ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  if (ios) location.replace("https://apps.apple.com/app/id6822005921");
+  else if (/Android/i.test(ua)) location.replace("https://play.google.com/store/apps/details?id=com.e2eas.famoni");
+})();
+</script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 16px;
+  background:linear-gradient(180deg,#0F172A 0%,#1E3A8A 100%);color:#fff;
+  font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;text-align:center}
+main{max-width:520px;width:100%}
+.icon{width:96px;height:96px;border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+h1{font-size:2rem;line-height:1.2;margin:20px 0 8px}
+.lead{color:#CBD5E1;font-size:1.1rem;margin:0 0 6px}
+.trial{display:inline-block;margin:14px 0 28px;padding:8px 20px;border-radius:999px;background:#38BDF8;color:#0F172A;font-weight:700}
+.stores{display:flex;flex-direction:column;gap:14px;align-items:center}
+.store{display:flex;align-items:center;gap:14px;width:100%;max-width:320px;padding:12px 22px;border-radius:14px;
+  background:#000;color:#fff;text-decoration:none;border:1.5px solid #64748B;transition:transform .15s,border-color .15s}
+.store:hover,.store:focus-visible{transform:translateY(-2px);border-color:#fff}
+.store svg{width:34px;height:34px;flex:none}
+.store span{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}
+.store small{font-size:.75rem;color:#CBD5E1}
+.store b{font-size:1.35rem;font-weight:600}
+.facts{color:#CBD5E1;font-size:.95rem;margin:28px 0 0}
+footer{margin-top:24px;font-size:.8rem;color:#94A3B8}
+footer a{color:#93C5FD}
+</style>
+</head>
+<body>
+<main>
+<img class="icon" src="../icon.png" alt="Famoni">
+<h1>Ever reach the end of the month with no idea where your paycheck went?</h1>
+<p class="lead">Famoni: your family budget, expenses and cards.</p>
+<span class="trial">Try it free for 14 days</span>
+<div class="stores">
+  <a class="store" href="https://apps.apple.com/app/id6822005921">
+    <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="#fff" stroke-width="1.8"/><rect x="10" y="4.2" width="4" height="1.2" rx=".6"/><circle cx="12" cy="18.6" r="1"/></svg>
+    <span><small>Download on the</small><b>App Store</b></span>
+  </a>
+  <a class="store" href="https://play.google.com/store/apps/details?id=com.e2eas.famoni">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17l14-8.5z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    <span><small>Get it on</small><b>Google Play</b></span>
+  </a>
+</div>
+<p class="facts">Works offline · No account · No ads<br>Your data stays on your phone.</p>
+<footer><a href="../">Famoni</a> · <a href="../privacy/#en">Privacy</a> · <a href="../support/#en">Support</a></footer>
+</main>
+</body>
+</html>
